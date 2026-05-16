@@ -81,20 +81,20 @@ Student details:
 - Registration ID: ${regData.regId}
 
 Event details:
-- Event: Festify 2025 — KIIT University's annual student festival
+- Event: Festify 2026 — BJB (A) College's annual student festival
 - Theme: "Build the World You Imagine"
-- Date: June 20–22, 2025
-- Venue: KIIT University, Campus 1 Auditorium, Bhubaneswar, Odisha
+- Date: June 20–22, 2026
+- Venue: BJB (A), Campus 1 Auditorium, Bhubaneswar, Odisha
 - Time: 9:00 AM – 9:00 PM daily
 
 Return ONLY valid inline-styled HTML for the email body (no <!DOCTYPE>, no <html>/<body> tags). Use a clean, modern design with:
-- A pink-to-purple gradient header with "Festify 2025" title
+- A pink-to-purple gradient header with "Festify 2026" title
 - A warm personalised greeting using the student's first name
 - A styled registration ID box with a dashed border
 - An event details grid (date, venue, time, track)
 - A friendly message about what to expect
 - A "Add to Calendar" CTA button (styled, no real link needed)
-- Footer with festify@kiit.ac.in contact
+- Footer with festify@bjb.ac.in contact
 - All styles must be inline. Background: white. Fonts: system sans-serif.`;
 
     const res=await fetch('https://api.anthropic.com/v1/messages',{
@@ -128,12 +128,12 @@ Return ONLY valid inline-styled HTML for the email body (no <!DOCTYPE>, no <html
 function buildFallbackEmail(){
   return `<div style="font-family:sans-serif;background:#fff;border-radius:12px;overflow:hidden;max-width:560px">
   <div style="background:linear-gradient(135deg,#f72585,#7209b7);padding:2rem;text-align:center;color:#fff">
-    <h1 style="font-size:2rem;font-weight:800;margin:0 0 .3rem">Festify 2025</h1>
+    <h1 style="font-size:2rem;font-weight:800;margin:0 0 .3rem">Festify 2026</h1>
     <p style="margin:0;opacity:.85;font-size:.9rem">Build the World You Imagine</p>
   </div>
   <div style="padding:2rem">
     <h2 style="font-size:1.2rem;color:#1a1a2e;margin-bottom:1rem">Hey ${regData.first}! 🎉 You're officially registered!</h2>
-    <p style="color:#444;line-height:1.7;margin-bottom:1rem">We're thrilled to have you at <strong>Festify 2025</strong> — KIIT University's biggest student festival of the year. Get ready for three incredible days of innovation, culture, and community.</p>
+    <p style="color:#444;line-height:1.7;margin-bottom:1rem">We're thrilled to have you at <strong>Festify 2026</strong> — BJB (A) College's biggest student festival of the year. Get ready for three incredible days of innovation, culture, and community.</p>
     <div style="background:#f8f0ff;border:2px dashed #7209b7;border-radius:10px;padding:1.2rem;text-align:center;margin:1.5rem 0">
       <div style="font-size:1.5rem;font-weight:800;color:#7209b7;letter-spacing:2px">${regData.regId}</div>
       <p style="font-size:.78rem;color:#888;margin:.3rem 0 0">Your Registration ID — save this!</p>
@@ -141,12 +141,12 @@ function buildFallbackEmail(){
     <table style="width:100%;border-collapse:collapse;margin-bottom:1.5rem">
       <tr>
         <td style="padding:.6rem;background:#f5f5fa;border-radius:8px 0 0 8px;font-size:.78rem;color:#888;font-weight:600;text-transform:uppercase;width:30%">📅 Date</td>
-        <td style="padding:.6rem;background:#f5f5fa;border-radius:0 8px 8px 0;font-size:.88rem;font-weight:600;color:#1a1a2e">June 20–22, 2025</td>
+        <td style="padding:.6rem;background:#f5f5fa;border-radius:0 8px 8px 0;font-size:.88rem;font-weight:600;color:#1a1a2e">June 20–23, 2026</td>
       </tr>
       <tr><td colspan="2" style="height:.5rem"></td></tr>
       <tr>
         <td style="padding:.6rem;background:#f5f5fa;border-radius:8px 0 0 8px;font-size:.78rem;color:#888;font-weight:600;text-transform:uppercase">📍 Venue</td>
-        <td style="padding:.6rem;background:#f5f5fa;border-radius:0 8px 8px 0;font-size:.88rem;font-weight:600;color:#1a1a2e">KIIT University, Bhubaneswar</td>
+        <td style="padding:.6rem;background:#f5f5fa;border-radius:0 8px 8px 0;font-size:.88rem;font-weight:600;color:#1a1a2e">BJB (A) College, Bhubaneswar</td>
       </tr>
       <tr><td colspan="2" style="height:.5rem"></td></tr>
       <tr>
@@ -158,8 +158,8 @@ function buildFallbackEmail(){
     <p style="color:#666;font-size:.82rem;line-height:1.7">Please bring your college ID on event day. Meals are included for hackathon participants. See you on June 20! 🚀</p>
   </div>
   <div style="background:#f5f5fa;padding:1rem 2rem;text-align:center;font-size:.75rem;color:#888;border-top:1px solid #eee">
-    Festify 2025 · KIIT University · festify@kiit.ac.in<br/>
-    You're receiving this because you registered for Festify 2025.
+    Festify 2026 · BJB (A) College · festify@bjb.ac.in<br/>
+    You're receiving this because you registered for Festify 2026.
   </div>
 </div>`;
 }
