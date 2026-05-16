@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Festify – Discover & Register for Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- BG -->
+<div class="mesh"></div>
+<div class="grid-overlay"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="#details" onclick="toggleMenu()">Event Details</a>
+  <a href="#schedule" onclick="toggleMenu()">Schedule</a>
+  <a href="#speakers" onclick="toggleMenu()">Highlights</a>
+  <a href="#register" onclick="toggleMenu()">Register</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Festify</div>
+  <ul class="nav-links">
+    <li><a href="#details">Details</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#speakers">Highlights</a></li>
+    <li><a href="#register">Register</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register Free →</button>
+  <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><span></span>Registrations Open Now</div>
+  <h1 class="hero-title">
+    Event Universe<br>
+    <span class="grad">Enjoy Every Moment</span>
+  </h1>
+  <p class="hero-sub">
+    Festify brings students the most exciting college events in one place. Find your vibe, register instantly, and never miss what matters.
+  </p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register Now — It's Free</button>
+    <button class="btn-ghost" onclick="document.getElementById('details').scrollIntoView({behavior:'smooth'})">Explore Event ↓</button>
+  </div>
+  <div class="hero-stats">
+    <div class="h-stat">
+      <div class="h-stat-val">150+</div>
+      <div class="h-stat-label">Registered Students</div>
+    </div>
+    <div class="h-stat">
+      <div class="h-stat-val">4</div>
+      <div class="h-stat-label">Days of Events</div>
+    </div>
+    <div class="h-stat">
+      <div class="h-stat-val">₹1000</div>
+      <div class="h-stat-label">Prize Pool</div>
+    </div>
+    <div class="h-stat">
+      <div class="h-stat-val">20+</div>
+      <div class="h-stat-label">Expert Speakers</div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT DETAILS -->
+<section id="details">
+  <span class="section-label">Event Details</span>
+  <h2 class="section-title">Everything You Need to Know</h2>
+  <p class="section-sub">All the key information about Festify 2025 — your one-stop student hackathon and cultural fest.</p>
+
+  <div class="details-layout">
+    <div class="detail-cards">
+      <div class="detail-card">
+        <div class="detail-icon pink">📅</div>
+        <div>
+          <div class="detail-label">DATE</div>
+          <div class="detail-value">June 20–23, 2026</div>
+          <div class="detail-sub">Thursday to Sunday · 4 full days</div>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon blue">🕘</div>
+        <div>
+          <div class="detail-label">TIME</div>
+          <div class="detail-value">9:00 AM – 9:00 PM Daily</div>
+          <div class="detail-sub">Night events on Day 2-3 until 11 PM</div>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon cyan">📍</div>
+        <div>
+          <div class="detail-label">VENUE</div>
+          <div class="detail-value">BJB A College</div>
+          <div class="detail-sub">Room no- 102, Bhubaneswar, Odisha</div>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon green">🎟️</div>
+        <div>
+          <div class="detail-label">ENTRY</div>
+          <div class="detail-value">Free for All Students</div>
+          <div class="detail-sub">Valid College ID required at entry</div>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon yellow">👥</div>
+        <div>
+          <div class="detail-label">TEAM SIZE</div>
+          <div class="detail-value">1 – 4 Members</div>
+          <div class="detail-sub">Solo participants welcome in all tracks</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <h3>About Festify 2025</h3>
+      <p>
+        Festify is BJBians annual student festival — a four-day celebration of technology, creativity, and culture. It brings together the brightest minds from campuses across India to compete, collaborate, and create.
+      </p>
+      <p>
+        Whether you're a coder, designer, speaker, musician, or just someone who loves to explore new ideas — Festify has something for you. From hackathons and workshops to cultural nights and networking sessions, every moment is crafted to inspire.
+      </p>
+      <p>
+        This year's theme: <strong style="color:#fff">"Build the World You Imagine."</strong>
+      </p>
+      <div class="tag-list">
+        <span class="tag">Hackathon</span>
+        <span class="tag blue">AI/ML</span>
+        <span class="tag cyan">Web Dev</span>
+        <span class="tag green">Cultural</span>
+        <span class="tag">Design</span>
+        <span class="tag blue">Gaming</span>
+        <span class="tag cyan">Robotics</span>
+        <span class="tag green">Open Mic</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <span class="section-label">Schedule</span>
+  <h2 class="section-title">4 Days. Non-Stop Action.</h2>
+  <p class="section-sub">A carefully packed agenda designed so you never miss a beat.</p>
+
+  <div class="schedule-grid">
+    <div class="sched-card">
+      <div class="sched-day">Day 1 · June 20</div>
+      <div class="sched-time">9:00 AM</div>
+      <div class="sched-title">🎉 Grand Opening Ceremony</div>
+      <div class="sched-desc">Kick-off with keynote speakers, theme reveal, and team formation activities.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 1 · June 20</div>
+      <div class="sched-time">11:00 AM</div>
+      <div class="sched-title">⚡ Hackathon Begins</div>
+      <div class="sched-desc">72-hour coding challenge starts. Problem statements released across 5 tracks.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 1 · June 20</div>
+      <div class="sched-time">3:00 PM</div>
+      <div class="sched-title">🧠 Workshops & Talks</div>
+      <div class="sched-desc">Parallel sessions on AI, Web3, UI/UX Design, and Product Thinking.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 2 · June 21</div>
+      <div class="sched-time">10:00 AM</div>
+      <div class="sched-title">🎤 Speaker Series</div>
+      <div class="sched-desc">Industry leaders share insights. Live Q&A and mentorship sessions.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 2 · June 21</div>
+      <div class="sched-time">2:00 PM</div>
+      <div class="sched-title">🎮 Gaming Tournament</div>
+      <div class="sched-desc">BGMI, Valorant & Chess. Open brackets — register at the venue.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 2 · June 21</div>
+      <div class="sched-time">7:00 PM</div>
+      <div class="sched-title">🌟 Cultural Night</div>
+      <div class="sched-desc">Live performances, open mic, DJ night, and a talent showcase.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 3 · June 22</div>
+      <div class="sched-time">12:00 PM</div>
+      <div class="sched-title">🚀 Project Demos</div>
+      <div class="sched-desc">Teams present their final projects to a panel of expert judges.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 3 · June 22</div>
+      <div class="sched-time">5:00 PM</div>
+      <div class="sched-title">Co-curriculam activities</div>
+      <div class="sched-desc">Prize distribution, certificates, and the closing celebration.</div>
+    </div>
+    <div class="sched-card">
+      <div class="sched-day">Day 4 · June 23</div>
+      <div class="sched-time">5:00 PM</div>
+      <div class="sched-title">🏆 Award Ceremony</div>
+      <div class="sched-desc">Prize distribution, certificates, and the closing celebration.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS / HIGHLIGHTS -->
+<section id="speakers">
+  <span class="section-label">Meet the Speakers</span>
+  <h2 class="section-title">Learn From the Best</h2>
+  <p class="section-sub">Visionary leaders and innovators coming together to inspire the next generation.</p>
+
+  <div class="speakers-grid">
+    <div class="speaker-card">
+      <div class="speaker-avatar">👩‍💻</div>
+      <div class="speaker-name">Arpita Parida</div>
+      <div class="speaker-role">AI Research Lead · Google</div>
+      <span class="speaker-topic">Generative AI</span>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-avatar">🧑‍🚀</div>
+      <div class="speaker-name">Subhasmita Ghadie</div>
+      <div class="speaker-role">Co-Founder · TechStartup</div>
+      <span class="speaker-topic">Building Products</span>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-avatar">👩‍🎨</div>
+      <div class="speaker-name">A Bhumika</div>
+      <div class="speaker-role">Design Director · Adobe</div>
+      <span class="speaker-topic">Future of Design</span>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-avatar">🧑‍💼</div>
+      <div class="speaker-name">Vaishnavi</div>
+      <div class="speaker-role">CTO · FinTech Corp</div>
+      <span class="speaker-topic">Web3 & Blockchain</span>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+  <span class="section-label">Register</span>
+  <h2 class="section-title">Join Festify 2026</h2>
+
+  <div class="register-layout">
+    <div class="register-info">
+      <h3>Why You Shouldn't Miss This</h3>
+      <p>Festify is more than a hackathon — it's where friendships are forged, careers are shaped, and ideas come to life. Registration takes under 2 minutes.</p>
+      <div class="perks">
+        <div class="perk">Free entry for all registered students</div>
+        <div class="perk">Participation certificate for every attendee</div>
+        <div class="perk">Meals included for hackathon participants</div>
+        <div class="perk">Networking with 500+ students & professionals</div>
+        <div class="perk">Access to all workshops and speaker sessions</div>
+        <div class="perk">Cultural night passes included</div>
+        <div class="perk">Exclusive Festify 2026 swag kit</div>
+      </div>
+    </div>
+
+    <div class="register-form">
+      <div class="form-title">Create Your Free Account</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="firstName" placeholder="Umakanta" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lastName" placeholder="Kumar" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="umakanta@bjb.ac.in" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="+91 98765 43210" />
+      </div>
+      <div class="form-group">
+        <label>College / University</label>
+        <input type="text" id="college" placeholder="BJB A College" />
+      </div>
+      <div class="form-group">
+        <label>Year of Study</label>
+        <select id="year">
+          <option value="">Select year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+          <option>Postgraduate</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Event Track Interest</label>
+        <select id="track">
+          <option value="">Choose your track</option>
+          <option>Hackathon – AI/ML</option>
+          <option>Hackathon – Web Dev</option>
+          <option>Hackathon – Blockchain</option>
+          <option>Design Competition</option>
+          <option>Gaming Tournament</option>
+          <option>Cultural Events</option>
+          <option>All Events (Explorer Pass)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Anything you'd like to tell us? (Optional)</label>
+        <textarea id="message" placeholder="Team names, special requirements, questions..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">🚀 Register for Festify 2026</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <span class="section-label">FAQ</span>
+  <h2 class="section-title">Got Questions?</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is registration free? <span>+</span></button>
+      <div class="faq-a">Yes, registration and entry to Festify 2026 is completely free for all students with a valid college ID.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can I participate solo in the hackathon? <span>+</span></button>
+      <div class="faq-a">Yes! Solo participation is allowed in all tracks. Teams can have 1–4 members.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do I need to be from BJB college? <span>+</span></button>
+      <div class="faq-a">No, Festify is open to students from all colleges and universities across India.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Will accommodation be provided? <span>+</span></button>
+      <div class="faq-a">Accommodation is available for outstation participants at a nominal cost. Please mention it during registration and we'll reach out with details.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">When is the last date to register? <span>+</span></button>
+      <div class="faq-a">Registration closes on June 10, 2026, or when seats are full — whichever comes first. Register early to secure your spot!</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-brand">
+    <span class="nav-logo">Festify</span>
+    <p>BJB (A) College's flagship student festival. Three days of innovation, culture, and connection.</p>
+  </div>
+  <div class="foot-col">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="#details">Event Details</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </div>
+  <div class="foot-col">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="#">festify@bjb.ac.in</a></li>
+      <li><a href="#">+91 98765 00000</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="foot-bottom">
+  © 2026 Festify · BJB (A) College, Bhubaneswar, Odisha · Made with ❤️ for students
+</div>
+
+<!-- CONFIRMATION MODAL -->
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+
+    <!-- Step 1: Success -->
+    <div class="modal-step modal-success active" id="step1">
+      <div class="modal-icon">🎉</div>
+      <div class="modal-title">You're In!</div>
+      <div class="modal-sub" style="margin-bottom:.4rem">Welcome to Festify 2026,</div>
+      <span class="modal-name" id="modalName" style="color:var(--pink);font-weight:700;font-size:1.15rem;margin-bottom:1.2rem;display:block"></span>
+      <div class="modal-ticket">
+        ✅ Registration confirmed &nbsp;·&nbsp; ID: <strong id="regId"></strong><br/>
+        <span style="font-size:.8rem;color:var(--muted);margin-top:.3rem;display:block">Generating your personalised confirmation email with AI…</span>
+      </div>
+      <div style="display:flex;gap:.8rem;margin-top:1.5rem;flex-wrap:wrap;justify-content:center">
+        <button class="modal-close" id="viewEmailBtn" style="background:linear-gradient(135deg,var(--pink),var(--violet));border:none;padding:11px 26px" onclick="showEmailStep()">📧 View Confirmation Email</button>
+        <button class="modal-close" style="background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--text)" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Email Preview -->
+    <div class="modal-step modal-email-wrap" id="step2">
+      <div class="email-topbar">
+        <div>
+          <div class="email-topbar-title">📧 Your Confirmation Email</div>
+          <div class="email-topbar-sub">AI-generated · personalised for you</div>
+        </div>
+        <div class="email-tabs">
+          <button class="etab active" onclick="switchTab('preview',this)">Preview</button>
+          <button class="etab" onclick="switchTab('raw',this)">Raw HTML</button>
+        </div>
+      </div>
+
+      <div class="email-preview-area" id="emailPreviewArea">
+        <div class="email-loading" id="emailLoading">
+          <div class="spinner"></div>
+          Generating your personalised email…
+        </div>
+        <div id="emailPreview" style="display:none"></div>
+        <div id="emailRaw" style="display:none"></div>
+      </div>
+
+      <div class="email-bottom-bar">
+        <span class="copy-hint">Copy this HTML and send via any email service</span>
+        <button class="btn-copy" onclick="copyEmail()">📋 Copy HTML</button>
+        <button class="btn-done" onclick="closeModal()">Done ✓</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- AI CHATBOT -->
+<button class="chat-btn" onclick="toggleChat()" title="Ask Festify AI">
+  🤖
+  <div class="chat-badge">AI</div>
+</button>
+
+<div class="chatbox" id="chatbox">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info">
+      <div class="chat-name">Festify Assistant</div>
+      <div class="chat-status">● Online · Powered by AI</div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="msg bot">Hey! 👋 I'm your Festify AI assistant. Ask me anything about the event, schedule, registration, or prizes!</div>
+  </div>
+  <div class="chat-quick" id="quickBtns">
+    <button class="quick-btn" onclick="quickAsk('How do I register?')">How to register?</button>
+    <button class="quick-btn" onclick="quickAsk('What are the prizes?')">Prizes?</button>
+    <button class="quick-btn" onclick="quickAsk('Tell me the schedule')">Schedule</button>
+    <button class="quick-btn" onclick="quickAsk('Is it free?')">Is it free?</button>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" placeholder="Ask anything..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+    <button class="chat-send" onclick="sendMsg()">➤</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
